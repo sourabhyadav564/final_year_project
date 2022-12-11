@@ -21,7 +21,7 @@ export const Homepagecomptwo = () => {
       <div className="h-max bg-primary font-body text-7xl lg:p-10 xl:p-10 2xl:p-10 p-8 border-black border-2 rounded comptwobox" data-aos="zoom-in" >
         <h1 className=" font-bold text-5xl mb-6 text-black">CASH ON DELIVERY</h1>
         <p className=" my-6 font-bold mt-3 text-base text-black">
-          Govt. offer Cash on Delivery option for all our customers. You can pay
+          Govt. of india offer you a premium service of Cash on Delivery option for all our customers. You can pay
           for your order when it is delivered to your doorstep with no extra
           charges including delivery charges.
         </p>
