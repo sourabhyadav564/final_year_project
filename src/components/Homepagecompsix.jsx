@@ -8,12 +8,12 @@ function Homepagecompsix()
               <div className=" w-full h-96 flex items-end p-4 bg-no-repeat bg-cover bg-center border-black rounded border-2" style={{'background':"url('https://assets.website-files.com/60ec04708eb66b625fc4fb1e/6117c1de5cb34647c3134e54_jobs.2.jpg')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
                 <div className="px-4 py-2 flex border-black rounded border-2 bg-white w-max items-center">
       <h1 className="text-base font-bold">
-        WAITER / WAITRESS
+        SERVICES
       </h1>
       <a
         href="/account/login"
         className="mx-0 text-left bg-primary-500 px-2 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-auto ml-4 text-sm">
-        24/32h Week
+        24/7
       </a>
     </div>
               </div>
@@ -27,16 +27,16 @@ function Homepagecompsix()
       <div className="bg-black h-0.5 my-5 mx-auto w-full">
         <div className="p-2"></div>
       </div>
-      <p className="font-bold uppercase text-lg">What do we expect from you</p>
+      <p className="font-bold uppercase text-lg">What do you expect from us</p>
       <ul className="p-3 list-inside">
         <li className="flex items-center gap-x-3 text-base font-semibold">
-          Welcomes customers when they arrive
+          COMING SOON
         </li>
         <li className="flex items-center gap-x-3 font-semibold">
-          Welcomes customers when they arrive
+          COMING SOON
         </li>
         <li className="flex items-center gap-x-3 font-semibold">
-          Welcomes customers when they arrive
+          COMING SOON
         </li>
       </ul>
     </div>
@@ -55,12 +55,12 @@ function Homepagecompsix()
               <div className=" w-full h-96 flex items-end p-4 border-black rounded border-2" style={{'background':"url('https://assets.website-files.com/60ec04708eb66b625fc4fb1e/60f6ab7bc9d59ae26eeb2567_nick-hillier-fZGtxqy6Vqs-unsplash-p-1080.jpeg')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
                 <div className="px-4 py-2 flex border-black rounded border-2 bg-white w-max items-center">
       <h1 className="text-base font-bold">
-        WAITER / WAITRESS
+        SERVICES
       </h1>
       <a
         href="/account/login"
         className="mx-0 text-left bg-primary-500 px-2 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-auto ml-4 text-sm">
-        24/32h Week
+        24/7
       </a>
     </div>
               </div>
@@ -74,16 +74,16 @@ function Homepagecompsix()
       <div className="bg-black h-0.5 my-5 mx-auto w-full">
         <div className="p-2"></div>
       </div>
-      <p className="font-bold uppercase text-lg">What do we expect from you</p>
+      <p className="font-bold uppercase text-lg">What do you expect from us</p>
       <ul className="p-3 list-inside">
         <li className="flex items-center gap-x-3 text-base font-semibold">
-          Welcomes customers when they arrive
+          COMING SOON
         </li>
         <li className="flex items-center gap-x-3 font-semibold">
-          Welcomes customers when they arrive
+          COMING SOON
         </li>
         <li className="flex items-center gap-x-3 font-semibold">
-          Welcomes customers when they arrive
+          COMING SOON
         </li>
       </ul>
     </div>

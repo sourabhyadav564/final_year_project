@@ -9,7 +9,7 @@ function Navbar() {
             href="/"
             className="my-11 border-none outline-0 outline-offset-0 outline-none h-14">
             <h1 className="tracking-tighter text-3xl text-black font-extrabold p-5 border-solid my-20 border-black border-2 outline-offset-0 outline-0 outline-none py-1 mt-0">
-              YONK
+              RATION HOUSE
             </h1>
           </a>
           <div className="hidden bg-white items-center md:flex md:text-sm md:gap-x-6 md:flex-row lg:border-black lg:border-2 lg:rounded-sm xl:mr-5 ">
@@ -26,12 +26,12 @@ function Navbar() {
             <a
               href="#features"
               className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold">
-              JOBS
+              ORDER NOW
             </a>
             <a
               href="/account/login"
               className="inline-block w-full py-2 mx-0 font-medium text-left px-2 h-full border-0 md:ml-0 md:w-auto md:px-0 md:text-center lg:mx-0 bg-primary text-black lg:py-4 lg:px-4 lg:font-bold xl:mx-0">
-              BOOK A TABLE
+              CART
             </a>
           </div>
           <div className="flex items-center gap-x-2 md:hidden z-10">

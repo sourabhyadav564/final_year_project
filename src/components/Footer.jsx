@@ -10,32 +10,31 @@ function Footer()
     return (
       <div className="bg-white mt-10">
       <div className="py-16 text-center max-w-7xl mx-auto">
-        <h1 className=" text-3xl font-semibold">YONK</h1>
+        <h1 className=" text-3xl font-semibold">RATION SHOP INDIA</h1>
         <p className="w-4/5 mx-auto my-5 md:w-3/5 lg:w-2/5">
-          Start working with Landrick that can provide everything you need to
-          generate awareness, drive traffic, connect.
+        GET YOUR MONTHLY RATION SUPPLIES DELIVERED AT YOUR DOORSTEP
         </p>
         <div className=" flex justify-center gap-x-3">
-          <a href="#">
+          <a href="https://www.instagram.com/mygovindia/?hl=en">
             <FaInstagram className={"w-full text-xl border-gray-600"} />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/MyGovIndia/">
             <FaFacebookF className={"w-full text-xl border-gray-600"} />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/mygovindia/">
             <FaTwitter className={"w-full text-xl border-gray-600"} />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/company/government-of-india/?originalSubdomain=in">
             <FaLinkedinIn className={"w-full text-xl border-gray-600"} />
           </a>
-          <a href="#">
+          <a href="https://www.youtube.com/mygovindia">
             <FaYoutubeSquare className={"w-full text-xl border-gray-600"} />
           </a>
         </div>
       </div>
       <div className="text-center py-1 max-w-7xl mx-auto border-t border-gray-200 dark:border-gray-600">
         <p className=" w-4/5 mx-auto my-5 text-sm leading-5">
-          &nbsp;@ 2022, YONK. All Rights Reserved
+          Government of INDIA. All Rights Reserved
         </p>
       </div>
     </div>
