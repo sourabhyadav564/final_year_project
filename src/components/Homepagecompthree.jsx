@@ -25,7 +25,7 @@ export const Homepagecompthree = () => {
       <div className="lg:w-1/2 xl:w-1/2 2xl:w-1/2 w-full mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 pr-10 xs:flex sm:flex md:flex xs:justify-around sm:justify-around md:justify-around" data-aos="flip-right">
         <img
           alt="No alt"
-          src="https://assets.website-files.com/60ec04708eb66b625fc4fb1e/6117c1e3e7b15b14b3e47920_about.2-p-1600.jpeg"
+          src="https://images.pexels.com/photos/1638523/pexels-photo-1638523.jpeg"
           className="border-2 border-black lg:w-80 xl:w-80 2xl:w-80 lg:ml-20 xl:ml-20 2xl:ml-20 " style={{'transform':'rotate(-6deg)'}}
         />
       </div>

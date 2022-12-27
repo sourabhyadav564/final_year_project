@@ -1,3 +1,6 @@
+
+
+
 export const Homepagecompone = () => {
   return (
     <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row mt-10 py-5 lg:px-10 xl:px-10 2xl:px-10 px-4">
@@ -17,7 +20,7 @@ export const Homepagecompone = () => {
       <div className="lg:w-1/2 xl:w-1/2 2xl:w-1/2 w-full mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 pr-10 " data-aos="flip-right">
         <img
           alt="No alt"
-          src="https://assets.website-files.com/60ec04708eb66b625fc4fb1e/6117c1e7a6a7d528d6f344b5_hero.jpg"
+          src="https://images.pexels.com/photos/1393382/pexels-photo-1393382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           className="border-2 border-black" style={{'transform':'rotate(-6deg)'}} data-aos="fade-up"
         />
       </div>

@@ -4,7 +4,7 @@ export const Homepagecompfour = () => {
       <div className="order-2 lg:order-1 xl:order-1 2xl:order-1 lg:w-1/2 xl:w-1/2 2xl:w-1/2 w-full mt-10 lg:mt-0 xl:mt-0 2xl:mt-0 pr-10 xs:flex sm:flex md:flex xs:justify-around sm:justify-around md:justify-around" data-aos="flip-right">
         <img
           alt="No alt"
-          src="https://assets.website-files.com/60ec04708eb66b625fc4fb1e/6117c1e480547c6e11daa4c9_about.1-p-1600.jpeg"
+          src="https://cdn.pixabay.com/photo/2015/02/27/22/28/india-652857_960_720.png"
           className="border-2 border-black lg:w-80 xl:w-80 2xl:w-80 lg:ml-20 xl:ml-20 2xl:ml-20" style={{'transform':'rotate(6deg)'}}
         />
       </div>

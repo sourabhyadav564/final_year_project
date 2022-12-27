@@ -5,7 +5,7 @@ function Homepagecompsix()
         <div className="lg:p-10 xl:p-10 2xl:p-10 p-4 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-around">
           <div className="mt-12 border-black border-2 w-full lg:w-5/12 xl:w-5/12 2xl:w-5/12" data-aos="zoom-out">
             <div className="p-5 w-full" style={{'backgroundColor':'#e48c71'}}>
-              <div className=" w-full h-96 flex items-end p-4 bg-no-repeat bg-cover bg-center border-black rounded border-2" style={{'background':"url('https://assets.website-files.com/60ec04708eb66b625fc4fb1e/6117c1de5cb34647c3134e54_jobs.2.jpg')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
+              <div className=" w-full h-96 flex items-end p-4 bg-no-repeat bg-cover bg-center border-black rounded border-2" style={{'background':"url('https://images.pexels.com/photos/7362957/pexels-photo-7362957.jpeg?auto=compress&cs=tinysrgb&w=600')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
                 <div className="px-4 py-2 flex border-black rounded border-2 bg-white w-max items-center">
       <h1 className="text-base font-bold">
         SERVICES
@@ -52,7 +52,7 @@ function Homepagecompsix()
 
           <div className="mt-12 border-black border-2 w-full lg:w-5/12 xl:w-5/12 2xl:w-5/12" data-aos="zoom-out">
             <div className="p-5 w-full" style={{'backgroundColor':'#e48c71'}}>
-              <div className=" w-full h-96 flex items-end p-4 border-black rounded border-2" style={{'background':"url('https://assets.website-files.com/60ec04708eb66b625fc4fb1e/60f6ab7bc9d59ae26eeb2567_nick-hillier-fZGtxqy6Vqs-unsplash-p-1080.jpeg')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
+              <div className=" w-full h-96 flex items-end p-4 border-black rounded border-2" style={{'background':"url('https://images.pexels.com/photos/4498122/pexels-photo-4498122.jpeg?auto=compress&cs=tinysrgb&w=600')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
                 <div className="px-4 py-2 flex border-black rounded border-2 bg-white w-max items-center">
       <h1 className="text-base font-bold">
         SERVICES
