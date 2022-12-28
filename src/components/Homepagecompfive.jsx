@@ -4,22 +4,22 @@ export const Homepagecompfive = () => {
       <div className="bg-primary">
         <div className="bg-white p-5 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row">
           <a
-            href="/account/login"
+            // //href="/account/login"
             className="inline-block  px-8 mx-4 text-center py-4 border-black border-2 rounded font-bold mt-5 text-black">
             FLOUR
           </a>
            <a
-            href="/account/login"
+            // //href="/account/login"
             className="inline-block  px-8 mx-4 text-center py-4 border-black border-2 rounded font-bold mt-5 text-black">
             OILS
           </a>
           <a
-            href="/account/login"
+            //href="/account/login"
             className="inline-block  px-8 mx-4 text-center py-4 border-black border-2 rounded font-bold mt-5 text-black">
             GRAINS
           </a>
           <a
-            href="/account/login"
+            //href="/account/login"
             className="inline-block px-8 mx-4 text-center py-4 border-black border-2 rounded font-bold mt-5 text-black">
             OTHERS
           </a>
@@ -32,7 +32,7 @@ export const Homepagecompfive = () => {
                 High quality wheat flour.
               </h1>
               <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 2 Rs/Kg.
               </a>
@@ -48,7 +48,7 @@ export const Homepagecompfive = () => {
                 High quality sugar.
               </h1>
                <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 20 Rs/Kg.
               </a>
@@ -64,7 +64,7 @@ export const Homepagecompfive = () => {
                 High quality rice.
               </h1>
                <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 5 Rs/Kg.
               </a>
@@ -80,7 +80,7 @@ export const Homepagecompfive = () => {
                low combustion kerosene oil.
               </h1>
                <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 30 Rs/Litre.
               </a>
@@ -93,10 +93,10 @@ export const Homepagecompfive = () => {
             <h1 className=" bg-white font-semibold text-2xl text-black">TEA</h1>
             <div className="flex mt-2 justify-between">
               <h1 className=" bg-white font-normal text-lg text-black">
-                darjeeing tea.
+                darjeeling tea.
               </h1>
                 <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 50 Rs/Kg.
               </a>
@@ -112,7 +112,7 @@ export const Homepagecompfive = () => {
                 big grain salt.
               </h1>
                 <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 10 Rs/Kg.
               </a>
@@ -128,7 +128,7 @@ export const Homepagecompfive = () => {
                 KACHCHI GHANI MUSTARD OIL.
               </h1>
                 <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 50 Rs/Litre.
               </a>
@@ -144,7 +144,7 @@ export const Homepagecompfive = () => {
                 14.2 KG LPG CYLINDER . 
               </h1>
                <a
-                href="/account/login"
+                //href="/account/login"
                 className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max lg:w-32 xl:w-32 2xl:w-32"  style={{'backgroundColor':'#f1d4ca'}}>
                 800 Rs.
               </a>

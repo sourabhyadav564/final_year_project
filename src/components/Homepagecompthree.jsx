@@ -7,8 +7,8 @@ export const Homepagecompthree = () => {
         <h1 className="text-5xl font-bold " data-aos="fade-up">&#x2022; SUGAR</h1>
         <h1 className="text-5xl font-bold " data-aos="fade-up">&#x2022; RICE</h1>
         <h1 className="text-5xl font-bold " data-aos="fade-up">&#x2022; LPG</h1>
-        <h1 className="text-5xl font-bold " data-aos="fade-up">&#x2022; KEROSENE OIL</h1>
-        <h1 className="text-5xl font-bold " data-aos="fade-up">&#x2022;FERTILIZERS</h1>
+        <h1 className="text-5xl font-bold " data-aos="fade-up">&#x2022; KEROSENE</h1>
+        <h1 className="text-5xl font-bold " data-aos="fade-up">&#x2022; FERTILIZERS</h1>
         <p className="font-bold mt-3 text-base " data-aos="fade-up">
         Get your monthly supplies of ration food delivered here.
         </p>
@@ -17,7 +17,7 @@ export const Homepagecompthree = () => {
         Get your food from Govt. approved gowdowns.
         </p>
         <a
-          href="/account/login"
+          //href="/account/login"
           className="inline-block py-2 mx-0 px-2 text-center border-black border-2 rounded font-bold w-72 mt-5 text-black" style={{'backgroundColor':'#f1d4ca'}} data-aos="fade-up" >
            ORDER NOW
         </a>

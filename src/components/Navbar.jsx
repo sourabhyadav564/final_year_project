@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menu } from "@headlessui/react";
+import CartOne from "./Carttwo";
 function Navbar() {
+  const [openCart,setOpenCart]=useState(false);
   return (
     <>
       <section className="shadow mt-0 py-5 w-screen lg:h-max">
@@ -29,7 +31,8 @@ function Navbar() {
               ORDER NOW
             </a>
             <a
-              href="/account/login"
+              onClick={()=>{setOpenCart(true)}}
+              //href="/account/login"
               className="inline-block w-full py-2 mx-0 font-medium text-left px-2 h-full border-0 md:ml-0 md:w-auto md:px-0 md:text-center lg:mx-0 bg-primary text-black lg:py-4 lg:px-4 lg:font-bold xl:mx-0">
               CART
             </a>
@@ -101,8 +104,10 @@ function Navbar() {
                         "group flex items-center w-full px-2 py-2 text-sm" +
                         (active ? "bg-primary text-white" : "")
                       }
-                      href="#">
-                      Sign Up
+                      // href="#"
+                      onClick={()=> {setOpenCart(true)}}
+                      >
+                     Cart
                     </a>
                   )}
                 </Menu.Item>
@@ -111,6 +116,8 @@ function Navbar() {
           </div>
         </div>
       </section>
+      <CartOne open={openCart} setOpen={setOpenCart}
+      />
     </>
   );
 }

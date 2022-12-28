@@ -19,7 +19,7 @@ export const Homepagecompfour = () => {
         <p className="font-bold mt-3 text-base " data-aos="flip-right">
         </p>
         <a
-          href="/account/login"
+          //href="/account/login"
           className="inline-block py-2 mx-0 px-2 text-center border-black border-2 rounded font-bold w-72 mt-5 text-black" style={{'backgroundColor':'#f1d4ca'}} data-aos="flip-right">
           YOUR PROFILE
         </a>

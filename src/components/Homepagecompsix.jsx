@@ -11,7 +11,7 @@ function Homepagecompsix()
         SERVICES
       </h1>
       <a
-        href="/account/login"
+        //href="/account/login"
         className="mx-0 text-left bg-primary-500 px-2 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-auto ml-4 text-sm">
         24/7
       </a>
@@ -58,7 +58,7 @@ function Homepagecompsix()
         SERVICES
       </h1>
       <a
-        href="/account/login"
+        //href="/account/login"
         className="mx-0 text-left bg-primary-500 px-2 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-auto ml-4 text-sm">
         24/7
       </a>
