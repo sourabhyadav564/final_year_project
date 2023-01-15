@@ -4,6 +4,7 @@ export const Homepagecompfive = () => {
       <div className="bg-primary">
         <div className="bg-white p-5 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row">
           <a
+          r
             // //href="/account/login"
             className="inline-block  px-8 mx-4 text-center py-4 border-black border-2 rounded font-bold mt-5 text-black">
             FLOUR

@@ -10,7 +10,103 @@ body
   background-color:#f6efea;
   color:#f6efea;
 }
+.login{
+  background-color:#f6efea;
+}
+button {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 50px;
+ width: 120px;
+ position: relative;
+ padding: 0 20px;
+ font-size: 18px;
+ text-transform: uppercase;
+ border: solid 2px black;
+ background-color: #f6efea;
+ border-radius: 12px;
+ overflow: hidden;
+ transition: 31ms cubic-bezier(.5, .7, .4, 1);
+}
 
+button:before {
+ content: attr(alt);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ inset: 0;
+ font-size: 15px;
+ font-weight: bold;
+ color: black;
+ letter-spacing: 4px;
+ opacity: 1;
+}
+
+button:active {
+ box-shadow: none;
+ transition: 35ms cubic-bezier(.5, .7, .4, 1);
+}
+
+button:hover:before {
+ transition: all .0s;
+ transform: translateY(100%);
+ opacity: 0;
+}
+
+button i {
+ color: black;
+ font-size: 15px;
+ font-weight: bold;
+ letter-spacing: 4px;
+ font-style: normal;
+ transition: all 2s ease;
+ transform: translateY(-20px);
+ opacity: 0;
+}
+
+button:hover i {
+ transition: all .2s ease;
+ transform: translateY(0px);
+ opacity: 1;
+}
+
+button:hover i:nth-child(1) {
+ transition-delay: 0.045s;
+}
+
+button:hover i:nth-child(2) {
+ transition-delay: calc(0.045s * 3);
+}
+
+button:hover i:nth-child(3) {
+ transition-delay: calc(0.045s * 4);
+}
+
+button:hover i:nth-child(4) {
+ transition-delay: calc(0.045s * 5);
+}
+
+button:hover i:nth-child(6) {
+ transition-delay: calc(0.045s * 6);
+}
+
+button:hover i:nth-child(7) {
+ transition-delay: calc(0.045s * 7);
+}
+
+button:hover i:nth-child(8) {
+ transition-delay: calc(0.045s * 8);
+}
+
+button:hover i:nth-child(9) {
+ transition-delay: calc(0.045s * 9);
+}
+
+button:hover i:nth-child(10) {
+ transition-delay: calc(0.045s * 10);
+}
 
 
 @tailwind base;
