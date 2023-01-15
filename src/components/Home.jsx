@@ -1,5 +1,5 @@
 import Navbar from "./Navbar.jsx";
-import About from "./About.jsx";
+// import About from "./About.jsx";
 import "aos/dist/aos.css";
 import Homepagecompone from "./Homepagecompone.jsx";
 import Homepagecomptwo from "./Homepagecomptwo.jsx";
@@ -18,7 +18,7 @@ function Home() {
         <Homepagecompthree />
         <Homepagecompfour />
         <Homepagecompfive />
-        <Homepagecompsix />
+        {/* <Homepagecompsix /> */}
         <Footer />
     </div>
   );

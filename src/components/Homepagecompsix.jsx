@@ -1,102 +1,47 @@
-function Homepagecompsix()
-  {
-    return (
-      <>
-        <div className="lg:p-10 xl:p-10 2xl:p-10 p-4 flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-around">
-          <div className="mt-12 border-black border-2 w-full lg:w-5/12 xl:w-5/12 2xl:w-5/12" data-aos="zoom-out">
-            <div className="p-5 w-full" style={{'backgroundColor':'#e48c71'}}>
-              <div className=" w-full h-96 flex items-end p-4 bg-no-repeat bg-cover bg-center border-black rounded border-2" style={{'background':"url('https://images.pexels.com/photos/7362957/pexels-photo-7362957.jpeg?auto=compress&cs=tinysrgb&w=600')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
-                <div className="px-4 py-2 flex border-black rounded border-2 bg-white w-max items-center">
-      <h1 className="text-base font-bold">
-        SERVICES
-      </h1>
-      <a
-        //href="/account/login"
-        className="mx-0 text-left bg-primary-500 px-2 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-auto ml-4 text-sm">
-        24/7
-      </a>
-    </div>
-              </div>
-            </div>
-            <div className="bg-white py-6 px-4 w-full">
-      <p className="font-bold">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla.
-      </p>
-      <div className="bg-black h-0.5 my-5 mx-auto w-full">
-        <div className="p-2"></div>
-      </div>
-      <p className="font-bold uppercase text-lg">What do you expect from us</p>
-      <ul className="p-3 list-inside">
-        <li className="flex items-center gap-x-3 text-base font-semibold">
-          COMING SOON
-        </li>
-        <li className="flex items-center gap-x-3 font-semibold">
-          COMING SOON
-        </li>
-        <li className="flex items-center gap-x-3 font-semibold">
-          COMING SOON
-        </li>
-      </ul>
-    </div>
-            <div className="bg-black h-0.5 w-full">
-      <div className="p-2"></div>
-    </div>
-            <div className="p-4">
-      <p className="font-bold">Lorem ipsum dolor sit amet </p>
-    </div>
+import rationCard from "../images/rationCard.jpg";
+import Footer from "./Footer";
+
+function Homepagecompsix() {
+  return (
+    <>
+      <div className="lg:p-10 xl:p-10 2xl:p-10 p-4 flex flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-around">
+        <div className="flex flex-col">
+          <div className="flex flex-col justify-center items-center w-full">
+            <h1 className="font-bold text-7xl pb-7" data-aos="flip-up">
+              RATION HOUSE
+            </h1>
           </div>
-
-
-
-          <div className="mt-12 border-black border-2 w-full lg:w-5/12 xl:w-5/12 2xl:w-5/12" data-aos="zoom-out">
-            <div className="p-5 w-full" style={{'backgroundColor':'#e48c71'}}>
-              <div className=" w-full h-96 flex items-end p-4 border-black rounded border-2" style={{'background':"url('https://images.pexels.com/photos/4498122/pexels-photo-4498122.jpeg?auto=compress&cs=tinysrgb&w=600')",'backgroundPosition':'center','backgroundRepeat':'no-repeat','backgroundSize':'cover'}}>
-                <div className="px-4 py-2 flex border-black rounded border-2 bg-white w-max items-center">
-      <h1 className="text-base font-bold">
-        SERVICES
-      </h1>
-      <a
-        //href="/account/login"
-        className="mx-0 text-left bg-primary-500 px-2 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-auto ml-4 text-sm">
-        24/7
-      </a>
-    </div>
-              </div>
-            </div>
-            <div className="bg-white py-6 px-4 w-full">
-      <p className="font-bold">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla.
-      </p>
-      <div className="bg-black h-0.5 my-5 mx-auto w-full">
-        <div className="p-2"></div>
-      </div>
-      <p className="font-bold uppercase text-lg">What do you expect from us</p>
-      <ul className="p-3 list-inside">
-        <li className="flex items-center gap-x-3 text-base font-semibold">
-          COMING SOON
-        </li>
-        <li className="flex items-center gap-x-3 font-semibold">
-          COMING SOON
-        </li>
-        <li className="flex items-center gap-x-3 font-semibold">
-          COMING SOON
-        </li>
-      </ul>
-    </div>
-            <div className="bg-black h-0.5 w-full">
-      <div className="p-2"></div>
-    </div>
-            <div className="p-4">
-      <p className="font-bold">Lorem ipsum dolor sit amet </p>
-    </div>
+          <div className="flex flex-col sm:flex-row justify-center items-center">
+            <img
+              className="lg:w-[300px] lg:h-[300px] border-2 border-black  w-24 h-36 my-4"
+              style={{ transform: "rotate(-6deg)" }}
+              src={rationCard}
+              alt="undraw-healthy-lifestyle-6tyl"
+              border="0"
+            />
+          </div>
+          <div className="pt-6 lg:w-[700px]">
+            <p className="font-semibold flex justify-items-start">
+              Ration House is the first initiative for the BPL card Holders to
+              order their daily needs online without going out and getting their
+              food and other necessities at their door step.
+              we deliver the food and other necessities at your door step. Your data is safe with us.
+              We provide the best delivery service to all the BPL card holders.
+              Its our duty to help the needy people. We are here to help you. 
+              Its time to say goodbye to the long queues and waiting for your turn.
+              Its time to become digital and save your time. we the Ration House are here to help you.
+              You can order your daily needs online and get them delivered at your door step.
+              Best delivery service is provided by us. Best quality food is provided by us.
+              Best security of your data is provided by us.
+              we are here to see you happy and satisfied.
+              we are here to serve you.
+            </p>
           </div>
         </div>
-      </>
-    );
-  }
+      </div>
+      <Footer/>
+    </>
+  );
+}
 
 export default Homepagecompsix;

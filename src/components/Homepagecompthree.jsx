@@ -18,7 +18,9 @@ export const Homepagecompthree = () => {
         </p>
         <a
           //href="/account/login"
-          className="inline-block py-2 mx-0 px-2 text-center border-black border-2 rounded font-bold w-72 mt-5 text-black" style={{'backgroundColor':'#f1d4ca'}} data-aos="fade-up" >
+          className="inline-block py-2 mx-0 px-2 text-center border-black border-2 rounded font-bold w-72 mt-5 text-black hover:cursor-pointer" style={{'backgroundColor':'#f1d4ca'}} data-aos="fade-up" onClick={()=>{
+            scrollTo(0,2290);
+          }}>
            ORDER NOW
         </a>
       </div>

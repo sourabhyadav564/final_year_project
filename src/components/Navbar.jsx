@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Menu } from "@headlessui/react";
 import CartOne from "./Carttwo";
 import Profile from "./Profile";
-import About from "./About";
+// import About from "./About";
 import { Link } from 'react-router-dom';
 import Homepagecompfive from "./Homepagecompfive";
 import Login from "./Login";
@@ -22,16 +22,17 @@ function Navbar() {
             </h1>
           </a>
           <div className="hidden bg-white items-center md:flex md:text-sm md:gap-x-6 md:flex-row lg:border-black lg:border-2 lg:rounded-sm xl:mr-5 ">
-            <a
-              className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold"
-              
+            {/* <a
+              className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
+              href="/"
             >
               HOME
-            </a>
-            {/* <Link to="/about"> */}
+            </a> */}
+            {/* <Link to="/about" > */}
               <a
                 className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
-              >
+                href="/about"
+               >
                 ABOUT
               </a>
               <a

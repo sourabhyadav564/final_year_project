@@ -83,7 +83,9 @@ export default function Login({ open, setOpen, children, title }) {
                           </div>
                           <div class="block md:flex items-center justify-between">
                             <div>
-                              <button alt="GET OTP">
+                              <button alt="GET OTP" onClick={(e)=>{
+                                e.preventDefault();
+                              }}>
                                 <i>G</i>
                                 <i>E</i>
                                 <i>T</i>

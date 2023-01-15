@@ -10,7 +10,7 @@ function Footer()
     return (
       <div className="bg-white mt-10">
       <div className="py-16 text-center max-w-7xl mx-auto">
-        <h1 className=" text-3xl font-semibold">RATION SHOP INDIA</h1>
+        <h1 className=" text-3xl font-semibold">RATION HOUSE INDIA</h1>
         <p className="w-4/5 mx-auto my-5 md:w-3/5 lg:w-2/5">
         GET YOUR MONTHLY RATION SUPPLIES DELIVERED AT YOUR DOORSTEP
         </p>
