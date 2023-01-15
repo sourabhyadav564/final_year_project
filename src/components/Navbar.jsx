@@ -50,8 +50,8 @@ function Navbar() {
             >
               PROFILE
             </a>
-            <a className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer" onClick={()=>{
-              scrollTo(0,2290);
+            <a className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer" onClick={() => {
+              scrollTo(0, 2290);
             }}>
               ORDER NOW
             </a>
@@ -112,7 +112,7 @@ function Navbar() {
                         (active ? "bg-primary text-white" : "")
                       }
                       // href="#"
-                      onClick={()=>{
+                      onClick={() => {
                         myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
                       }}
                     >
@@ -127,7 +127,7 @@ function Navbar() {
                         "group flex items-center w-full px-2 py-2 text-sm" +
                         (active ? "bg-primary text-white" : "")
                       }
-                      href="#"
+                    // href="#"
                     >
                       Login
                     </a>

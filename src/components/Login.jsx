@@ -5,14 +5,12 @@ import { GrClose } from "react-icons/gr";
 // import VanillaTilt from "vanilla-tilt";
 
 export default function Login({ open, setOpen, children, title }) {
-  const cancelButtonRef = useRef(null);
 
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
         as="div"
         className="fixed z-10 inset-0 overflow-y-auto"
-        initialFocus={cancelButtonRef}
         onClose={setOpen}
       >
         <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
@@ -57,8 +55,6 @@ export default function Login({ open, setOpen, children, title }) {
               <div className="bg-[#ffd4bd] px-4 sm:p-6 sm:pb-4 w-full h-full">
                 <div className="h-[400px] w-[500px]">
                   <div class="fixed pin items-center w-[500px] h-[500px]">
-                    <div class="fixed pin bg-black opacity-75 z-10"></div>
-
                     <div class="relative mx-6 md:mx-auto w-full z-20 m-8">
                       <div class=" bg-[#ffd4bd] rounded-lg ">
                         <h1 class="text-center text-6xl p-8 text-green-dark">
@@ -77,7 +73,7 @@ export default function Login({ open, setOpen, children, title }) {
                               class="shadow appearance-none border rounded w-full py-2 px-3 "
                               id="email"
                               type="text"
-                             maxLength="10"
+                              maxLength="10"
                               placeholder="Enter Your Mobile Number"
                             />
                           </div>
@@ -95,11 +91,11 @@ export default function Login({ open, setOpen, children, title }) {
                                 <i>P</i>
                               </button>
                             </div>
-                            <div class="mt-4 md:mt-0">
+                            {/* <div class="mt-4 md:mt-0">
                               <a href="#" class="text-green no-underline">
                                 Forget Password?
                               </a>
-                            </div>
+                            </div> */}
                           </div>
                         </form>
                       </div>
