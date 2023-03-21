@@ -2,6 +2,7 @@ import React from "react";
 import { Fragment, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { GrClose } from "react-icons/gr";
+import { users } from "../Constants";
 // import VanillaTilt from "vanilla-tilt";
 
 export default function Login({ open, setOpen, children, title }) {
@@ -71,31 +72,51 @@ export default function Login({ open, setOpen, children, title }) {
                             </label>
                             <input
                               class="shadow appearance-none border rounded w-full py-2 px-3 "
-                              id="email"
+                              id="number"
                               type="text"
                               maxLength="10"
                               placeholder="Enter Your Mobile Number"
                             />
                           </div>
+                          <div class="mb-4">
+                            <label
+                              class="block text-sm font-bold mb-2"
+                              for="email"
+                            >
+                              Password
+                            </label>
+                            <input
+                              class="shadow appearance-none border rounded w-full py-2 px-3 "
+                              id="password"
+                              type="password"
+                              maxLength="10"
+                              placeholder="Enter Your Password"
+                            />
+                          </div>
                           <div class="block md:flex items-center justify-between">
                             <div>
-                              <button alt="GET OTP" onClick={(e)=>{
+                              <button alt="LOG IN" onClick={(e) => {
                                 e.preventDefault();
+                                users.map((user) => {
+                                  if (user.Number === document.getElementById("number").value && user.password === document.getElementById("password").value) {
+                                
+                                    localStorage.setItem("Number", document.getElementById("number").value);
+                                    setOpen(false);
+                                    window.location.reload();
+                                  }
+                                  else
+                                    alert("Wrong Credentials");
+                                });
+
                               }}>
-                                <i>G</i>
-                                <i>E</i>
-                                <i>T</i>
-                                <i>&nbsp;</i>
+                                <i>L</i>
                                 <i>O</i>
-                                <i>T</i>
-                                <i>P</i>
+                                <i>G</i>
+                                <i>&nbsp;</i>
+                                <i>I</i>
+                                <i>N</i>
                               </button>
                             </div>
-                            {/* <div class="mt-4 md:mt-0">
-                              <a href="#" class="text-green no-underline">
-                                Forget Password?
-                              </a>
-                            </div> */}
                           </div>
                         </form>
                       </div>

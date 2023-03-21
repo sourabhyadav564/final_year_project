@@ -45,7 +45,14 @@ function Navbar() {
             <a
               className="inline-block hover:cursor-pointer w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold"
               onClick={() => {
-                setOpenProfile(true);
+                if(localStorage.getItem("Number"))
+                {
+                  setOpenProfile(true);
+                }
+                else
+                {
+                  setOpenLogin(true);
+                }
               }}
             >
               PROFILE

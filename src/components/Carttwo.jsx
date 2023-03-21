@@ -1,54 +1,30 @@
 import { GrClose } from "react-icons/gr";
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useEffect, useRef, useState, useContext } from "react";
+import { Fragment, useEffect, useState } from "react";
+import Login from "./Login";
 
-const products = [
-    {
-      id: 1,
-      name: 'Wheat',
-      href: '#',
-      price: '₹10',
-      quantity: "10kg",
-      imageSrc: 'https://th.bing.com/th/id/OIP.hEUDHZ1ECC1NXoMiBKs1ZgHaH8?w=180&h=193&c=7&r=0&o=5&pid=1.7',
-      imageAlt: 'Wheat',
-    },
-    {
-      id: 2,
-      name: 'Rice',
-      href: '#',
-      price: '₹50',
-      quantity: "15kg",
-      imageSrc: 'https://th.bing.com/th/id/OIP.AE6EjiZs7gl-Ir4fPWKISQHaHP?w=196&h=192&c=7&r=0&o=5&pid=1.7',
-      imageAlt:
-        'Rice',
-    },
-    {
-      id: 3,
-      name: 'Sugar',
-      href: '#',
-      price: '₹50',
-      quantity: "5kg",
-      imageSrc: 'https://th.bing.com/th/id/OIP.hJp_Njk_AzIc3raYtj6V3QHaF6?w=230&h=184&c=7&r=0&o=5&pid=1.7',
-      imageAlt:
-        'Sugar',
-    },
-    {
-      id: 4,
-      name: 'Tea',
-      href: '#',
-      price: '₹100',
-      quantity: "3kg",
-      imageSrc: 'https://th.bing.com/th/id/OIP._YIy8p_SO0DUHRvcctZvWQHaHT?w=179&h=180&c=7&r=0&o=5&pid=1.7',
-      imageAlt:
-        'Tea',
-    },
-    
-  ]
+function Carttwo({ open, setOpen }) {
+  const [products, setproducts] = useState([]);
 
-function Carttwo({open, setOpen}){
-    return (
-        <Transition.Root show={open} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={setOpen}>
+  const [openLogin, setOpenLogin] = useState(false);
+  const removeProduct = (id) => {
+    const newProducts = products.filter((product) => product.id !== id);
+    setproducts(newProducts);
+    localStorage.setItem("cart", JSON.stringify(newProducts));
+  };
+
+  useEffect(() => {
+    if (localStorage.getItem("cart")) {
+      const cart = JSON.parse(localStorage.getItem("cart"));
+      setproducts(cart);
+    }
+  }, [open]);
+
+  console.log(products);
+
+  return (
+    <Transition.Root show={open} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={setOpen}>
         <Transition.Child
           as={Fragment}
           enter="ease-in-out duration-500"
@@ -109,7 +85,7 @@ function Carttwo({open, setOpen}){
                                       <h3>
                                         <a href={product.href}>{product.name}</a>
                                       </h3>
-                                      <p className="ml-4">{product.price}</p>
+                                      <p className="ml-4">₹{parseInt(product.price)*parseInt(product.quantity)}</p>
                                     </div>
                                     <p className="mt-1 text-sm text-gray-500">{product.color}</p>
                                   </div>
@@ -118,6 +94,9 @@ function Carttwo({open, setOpen}){
 
                                     <div className="flex">
                                       <button
+                                      onClick={() => {
+                                        removeProduct(product.id);
+                                      }}
                                         type="button"
                                         className="font-medium text-indigo-600 hover:text-indigo-500"
                                       >
@@ -136,11 +115,24 @@ function Carttwo({open, setOpen}){
                     <div className="border-t border-gray-200 py-6 px-4 sm:px-6">
                       <div className="flex justify-between text-base font-medium text-gray-900">
                         <p>Subtotal</p>
-                        <p>₹210</p>
+                        <p>₹{products.reduce((a, b) => a + (parseInt(b.price)*parseInt(b.quantity)), 0)}</p>
                       </div>
                       <p className="mt-0.5 text-sm text-gray-500">Shipping will be done after confirmation of order.</p>
                       <div className="mt-6">
                         <a
+                        onClick={ () => {
+                          if(localStorage.getItem("Number")){
+
+                            localStorage.removeItem("cart");
+                            setproducts([]);
+                            setOpen(false);
+                            alert("Order Placed Successfully");
+                          }
+                          else
+                          {
+                            setOpenLogin(true);
+                          }
+                        }}
                           href="#"
                           className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
                         >
@@ -167,9 +159,11 @@ function Carttwo({open, setOpen}){
             </div>
           </div>
         </div>
+      <Login open={openLogin} setOpen={setOpenLogin} />
       </Dialog>
-        </Transition.Root>
-      );
-    }
-    
+      
+    </Transition.Root>
+  );
+}
+
 export default Carttwo;

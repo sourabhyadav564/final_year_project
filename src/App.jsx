@@ -41,7 +41,7 @@ function App() {
       const ecommerce_ = new web3.eth.Contract(Ecommerce.abi, networkData.address);
       const usercounter_ = await ecommerce_.methods.counter().call();
       // console.log(usercounter_);
-      console.log(web3.utils.hexToNumberString(usercounter_));
+      console.log(usercounter_);
       setecommerce(ecommerce_);
       // changeusercounter(usercounter_);
 

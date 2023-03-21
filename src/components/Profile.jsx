@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { users } from "../Constants";
 import {
   MDBCol,
   MDBContainer,
@@ -15,6 +16,19 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 
 function Profile({ open, setOpen }) {
+  const [users1, setusers1] = useState({});
+
+  useEffect(() => {
+    if (localStorage.getItem("Number")) {
+      const user = users.filter((user) => user.Number === localStorage.getItem("Number"));
+      if (user) {
+        setusers1(user);
+      }
+    }
+  }, []);
+
+  console.log(users1);
+
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -83,21 +97,21 @@ function Profile({ open, setOpen }) {
                                   >
                                     <div className="flex items-center justify-center">
 
-                                    <MDBCardImage
-                                      src="https://cdn-icons-png.flaticon.com/512/560/560277.png"
-                                      alt="Avatar"
-                                      className="my-5"
-                                      style={{ width: "160px", height: "160px" }}
-                                      fluid
+                                      <MDBCardImage
+                                        src="https://cdn-icons-png.flaticon.com/512/560/560277.png"
+                                        alt="Avatar"
+                                        className="my-5"
+                                        style={{ width: "160px", height: "160px" }}
+                                        fluid
                                       />
                                     </div>
-                                    <p className="font-semibold text-xl">Nimit sharma</p>
+                                    <p className="font-semibold text-xl">{users1[0]?.name || ""}</p>
                                     <p className="font-light text-xl">Bpl Card Holder</p>
                                     <MDBIcon far icon="edit mb-5" />
                                   </MDBCol>
                                   <MDBCol md="8">
                                     <MDBCardBody className="p-4 font-semibold">
-                                     <p>Personal Information</p>
+                                      <p>Personal Information</p>
                                       <hr className="mt-0 mb-4" />
                                       <MDBRow className="pt-1">
                                         <MDBCol size="6" className="mb-3">
@@ -105,7 +119,7 @@ function Profile({ open, setOpen }) {
                                             AGE
                                           </MDBTypography>
                                           <MDBCardText className="text-muted font-light">
-                                            23
+                                            {users1[0]?.Age || ""}
                                           </MDBCardText>
                                         </MDBCol>
                                         <MDBCol size="6" className="mb-3">
@@ -113,7 +127,7 @@ function Profile({ open, setOpen }) {
                                             Phone
                                           </MDBTypography>
                                           <MDBCardText className="text-muted font-light">
-                                           9772557936
+                                            {users1[0]?.Number || ""}
                                           </MDBCardText>
                                         </MDBCol>
                                       </MDBRow>
@@ -124,20 +138,20 @@ function Profile({ open, setOpen }) {
                                       <hr className="mt-0 " />
                                       <MDBRow className="pt-1">
                                         <MDBCol size="6" className="mb-3">
-                                         <p className="font-light">
-                                            RJS1276832647826347
+                                          <p className="font-light">
+                                            {users1[0]?.bplCard || ""}
 
-                                         </p>
-                                          
+                                          </p>
+
                                           <MDBCardText className="text-muted">
                                           </MDBCardText>
                                         </MDBCol>
                                         <MDBCol size="6" className="mb-3">
                                           <MDBTypography tag="h6">
-                                           Address
+                                            Address
                                           </MDBTypography>
                                           <MDBCardText className="text-muted font-light">
-                                            A-66 scheme-10 near Jain mandir
+                                            {users1[0]?.address || ""}
                                           </MDBCardText>
                                         </MDBCol>
                                       </MDBRow>
