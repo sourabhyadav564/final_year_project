@@ -6,7 +6,6 @@ import { users } from "../Constants";
 // import VanillaTilt from "vanilla-tilt";
 
 export default function Login({ open, setOpen, children, title }) {
-
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
@@ -43,7 +42,7 @@ export default function Login({ open, setOpen, children, title }) {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-50"
           >
-            <div className="inline-block align-bottom bg-[#ffd4bd] rounded-lg text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle" >
+            <div className="inline-block align-bottom bg-[#ffd4bd] rounded-lg text-left overflow-hidden transform transition-all sm:my-8 sm:align-middle">
               <div className="pt-5 px-6 sm:flex justify-between items-center">
                 <div className="text-black-20 text-lg capitalize pl-6 flex-1 text-center font-semibold">
                   {title}
@@ -53,7 +52,7 @@ export default function Login({ open, setOpen, children, title }) {
                   className="cursor-pointer"
                 />
               </div>
-              <div className="bg-[#ffd4bd] px-4 sm:p-6 sm:pb-4 w-full h-full">
+              <div className="bg-[#ffd4bd] px-4 sm:p-6 sm:pb-4 w-full h-full mb-5">
                 <div className="h-[400px] w-[500px] xs:w-[300px] xs:h-[450px]">
                   <div class="fixed pin items-center w-[500px] h-[500px] xs:w-[300px]">
                     <div class="relative mx-6 md:mx-auto w-full z-20 m-8">
@@ -62,7 +61,7 @@ export default function Login({ open, setOpen, children, title }) {
                           Login
                         </h1>
 
-                        <form class="pt-6 pb-2 my-2">
+                        <form class="pt-6 pb-2 my-2 xs:pr-9">
                           <div class="mb-4 xs:pr-4">
                             <label
                               class="block text-sm font-bold mb-2"
@@ -93,19 +92,37 @@ export default function Login({ open, setOpen, children, title }) {
                             />
                           </div>
                           <div class="block md:flex items-center justify-between xs:pr-4">
-                            <div>
-                              <button alt="LOG IN" onClick={(e) => {
-                                e.preventDefault();
-                                users.map((user,index) => {
-                                  if (user.Number === document.getElementById("number").value && user.password === document.getElementById("password").value) {
-                                    localStorage.setItem("Number", document.getElementById("number").value);
-                                    setOpen(false);
-                                    window.location.reload();
-                                  }else if(index===users.length-1){
-                                    alert("Invalid Credentials")
+                            <div className="flex xs:justify-center">
+                              <button
+                                alt="LOG IN"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  for (
+                                    let index = 0;
+                                    index < users.length;
+                                    index++
+                                  ) {
+                                    if (
+                                      users[index].Number ===
+                                        document.getElementById("number")
+                                          .value &&
+                                      users[index].password ===
+                                        document.getElementById("password")
+                                          .value
+                                    ) {
+                                      localStorage.setItem(
+                                        "Number",
+                                        document.getElementById("number").value
+                                      );
+                                      setOpen(false);
+                                      window.location.reload();
+                                      break;
+                                    } else if (index === users.length - 1) {
+                                      alert("Invalid Credentials");
+                                    }
                                   }
-                                });
-                              }}>
+                                }}
+                              >
                                 <i>L</i>
                                 <i>O</i>
                                 <i>G</i>

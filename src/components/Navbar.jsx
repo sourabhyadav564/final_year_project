@@ -3,7 +3,7 @@ import { Menu } from "@headlessui/react";
 import CartOne from "./Carttwo";
 import Profile from "./Profile";
 // import About from "./About";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Homepagecompfive from "./Homepagecompfive";
 import Login from "./Login";
 
@@ -29,46 +29,43 @@ function Navbar() {
               HOME
             </a> */}
             {/* <Link to="/about" > */}
-              <a
-                className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
-                href="/about"
-               >
-                ABOUT
-              </a>
-              <a
-                className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
-                onClick={() => {
-                  if(localStorage.getItem("Number"))
-                  {
-                    setOpenProfile(true);
-                  }
-                  else
-                  {
-                    setOpenLogin(true);
-                  }
-                }}
-              >
-                LOGIN
-              </a>
+            <a
+              className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
+              href="/about"
+            >
+              ABOUT
+            </a>
+            <a
+              className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
+              onClick={() => {
+                if (localStorage.getItem("Number")) {
+                  setOpenProfile(true);
+                } else {
+                  setOpenLogin(true);
+                }
+              }}
+            >
+              LOGIN
+            </a>
             {/* </Link> */}
             <a
               className="inline-block hover:cursor-pointer w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold"
               onClick={() => {
-                if(localStorage.getItem("Number"))
-                {
+                if (localStorage.getItem("Number")) {
                   setOpenProfile(true);
-                }
-                else
-                {
+                } else {
                   setOpenLogin(true);
                 }
               }}
             >
               PROFILE
             </a>
-            <a className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer" onClick={() => {
-              scrollTo(0, 2290);
-            }}>
+            <a
+              className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
+              onClick={() => {
+                scrollTo(0, 2290);
+              }}
+            >
               ORDER NOW
             </a>
             <a
@@ -84,7 +81,7 @@ function Navbar() {
           <div className="flex items-center gap-x-2 md:hidden z-10">
             <Menu as="div">
               <Menu.Button>
-                <span>
+                <span className="pb-2">
                   <svg
                     className="w-full text-4xl mt-2 md:hidden"
                     stroke="currentColor"
@@ -129,7 +126,7 @@ function Navbar() {
                       }
                       // href="#"
                       onClick={() => {
-                        scrollTo(0, 4300);
+                        scrollTo(0, 4310);
                         // myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
                       }}
                     >
@@ -144,9 +141,13 @@ function Navbar() {
                         "group flex items-center w-full px-2 py-2 text-sm" +
                         (active ? "bg-primary text-white" : "")
                       }
-                    onClick={() => {
-                      setOpenLogin(true);
-                    }}
+                      onClick={() => {
+                        if (localStorage.getItem("Number")) {
+                          setOpenProfile(true);
+                        } else {
+                          setOpenLogin(true);
+                        }
+                      }}
                     >
                       Login
                     </a>
@@ -177,12 +178,9 @@ function Navbar() {
                       }
                       // href="#"
                       onClick={() => {
-                        if(localStorage.getItem("Number"))
-                        {
+                        if (localStorage.getItem("Number")) {
                           setOpenProfile(true);
-                        }
-                        else
-                        {
+                        } else {
                           setOpenLogin(true);
                         }
                       }}
