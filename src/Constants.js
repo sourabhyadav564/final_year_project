@@ -8,7 +8,27 @@ export const users = [
         Age: 22,
         address: "alwar 92 alkapuri",
         bplCard: "RJS1276832647826347",
-    }
+    },
+    {
+        id: 2,
+        name: "Sourabh yadav",
+        email: "sourabhyadav564@gmail.com", 
+        Number: "6375197371",
+        password: "sourabhyadav",
+        Age: 26,
+        address: "shalimaar h block",
+        bplCard: "RJS1276832647767577",
+    },
+    {
+        id: 3,
+        name: "Arvind Sharma",
+        email: "arvindsharma@mitrc.edu",
+        Number: "1234567891",
+        password: "arvindsharma",
+        Age: 35,
+        address: "MITRC HOD LAB",
+        bplCard: "RJS1276832676462847",
+    },
 ]
 export const products = [
     {

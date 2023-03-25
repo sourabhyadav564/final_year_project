@@ -2,6 +2,7 @@ import { GrClose } from "react-icons/gr";
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useState } from "react";
 import Login from "./Login";
+import { toast, ToastContainer } from "react-toastify";
 
 function Carttwo({ open, setOpen }) {
   const [products, setproducts] = useState([]);
@@ -12,7 +13,7 @@ function Carttwo({ open, setOpen }) {
     setproducts(newProducts);
     localStorage.setItem("cart", JSON.stringify(newProducts));
   };
-
+  const notify = () => toast("Product removed from cart");
   useEffect(() => {
     if (localStorage.getItem("cart")) {
       const cart = JSON.parse(localStorage.getItem("cart"));
@@ -96,13 +97,15 @@ function Carttwo({ open, setOpen }) {
                                       <button
                                       onClick={() => {
                                         removeProduct(product.id);
+                                        notify();
                                       }}
                                         type="button"
                                         className="font-medium text-indigo-600 hover:text-indigo-500"
                                       >
                                         Remove
-                                      </button>
+                                      </button> 
                                     </div>
+                                    
                                   </div>
                                 </div>
                               </li>

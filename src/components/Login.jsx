@@ -89,7 +89,6 @@ export default function Login({ open, setOpen, children, title }) {
                               class="shadow appearance-none border rounded w-full py-2 px-3 "
                               id="password"
                               type="password"
-                              maxLength="10"
                               placeholder="Enter Your Password"
                             />
                           </div>
@@ -97,17 +96,16 @@ export default function Login({ open, setOpen, children, title }) {
                             <div>
                               <button alt="LOG IN" onClick={(e) => {
                                 e.preventDefault();
-                                users.map((user) => {
+                                users.map((user,index) => {
                                   if (user.Number === document.getElementById("number").value && user.password === document.getElementById("password").value) {
-                                
                                     localStorage.setItem("Number", document.getElementById("number").value);
                                     setOpen(false);
                                     window.location.reload();
+                                  }else if(index===users.length-1){
+                                    alert("Invalid Credentials")
                                   }
-                                  else
-                                    alert("Wrong Credentials");
-                                });
 
+                                });
                               }}>
                                 <i>L</i>
                                 <i>O</i>

@@ -1,4 +1,5 @@
-import { Toast } from "bootstrap";
+
+import { toast } from "react-toastify";
 import { products } from "../Constants";
 export const Homepagecompfive = () => {
   const addtocart = (id) =>{
@@ -29,7 +30,7 @@ export const Homepagecompfive = () => {
                   addtocart(product.id);
                 }
                 }
-                className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max hover:cursor-pointer lg:w-32 xl:w-32 2xl:w-32" style={{ 'backgroundColor': '#f1d4ca' }}>
+                className="mx-1 text-left bg-primary-500 px-1 py-1 border-black border-2 flex items-center justify-center font-bold rounded w-44 text-black h-max hover:cursor-pointer lg:w-32 xl:w-32 2xl:w-32 bg-[#f1d4ca]  hover:scale-105 hover:bg-white">
                 ₹{product.price}
               </a>
             </div>

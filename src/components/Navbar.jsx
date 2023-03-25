@@ -17,7 +17,7 @@ function Navbar() {
       <section className="shadow mt-0 py-5 w-screen lg:h-max">
         <div className="flex items-center mx-auto overflow-hidden font-medium h-16 flex-row justify-between px-4 mt-0 w-screen lg:h-24">
           <a className="my-11 border-none outline-0 outline-offset-0 outline-none h-14">
-            <h1 className="tracking-tighter text-3xl text-black font-extrabold p-5 border-solid my-20 border-black border-2 outline-offset-0 outline-0 outline-none py-1 mt-0">
+            <h1 className="tracking-tighter lg:text-4xl text-2xl text-black font-extrabold p-5 border-solid my-20 border-black border-2 outline-offset-0 outline-0 outline-none py-1 mt-0 truncate">
               RATION HOUSE
             </h1>
           </a>
@@ -37,7 +37,16 @@ function Navbar() {
               </a>
               <a
                 className="inline-block w-full py-2 mx-0 font-medium text-left md:ml-0 md:w-auto md:px-0 md:mx-2 md:text-center lg:mx-3 lg:font-bold hover:cursor-pointer"
-                onClick={()=>{setOpenLogin(true);}}
+                onClick={() => {
+                  if(localStorage.getItem("Number"))
+                  {
+                    setOpenProfile(true);
+                  }
+                  else
+                  {
+                    setOpenLogin(true);
+                  }
+                }}
               >
                 LOGIN
               </a>
@@ -105,9 +114,9 @@ function Navbar() {
                         "group flex items-center w-full px-2 py-2 text-sm" +
                         (active ? "bg-primary text-white" : "")
                       }
-                      href="#"
+                      href="/about"
                     >
-                      Intro
+                      About
                     </a>
                   )}
                 </Menu.Item>
@@ -134,7 +143,9 @@ function Navbar() {
                         "group flex items-center w-full px-2 py-2 text-sm" +
                         (active ? "bg-primary text-white" : "")
                       }
-                    // href="#"
+                    onClick={() => {
+                      setOpenLogin(true);
+                    }}
                     >
                       Login
                     </a>
