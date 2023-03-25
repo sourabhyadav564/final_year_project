@@ -14,7 +14,7 @@ export default function Login({ open, setOpen, children, title }) {
         className="fixed z-10 inset-0 overflow-y-auto"
         onClose={setOpen}
       >
-        <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div className="flex items-end justify-center pt-4 px-4 pb-20 text-center sm:block sm:p-0">
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -54,16 +54,16 @@ export default function Login({ open, setOpen, children, title }) {
                 />
               </div>
               <div className="bg-[#ffd4bd] px-4 sm:p-6 sm:pb-4 w-full h-full">
-                <div className="h-[400px] w-[500px]">
-                  <div class="fixed pin items-center w-[500px] h-[500px]">
+                <div className="h-[400px] w-[500px] xs:w-[300px] xs:h-[450px]">
+                  <div class="fixed pin items-center w-[500px] h-[500px] xs:w-[300px]">
                     <div class="relative mx-6 md:mx-auto w-full z-20 m-8">
-                      <div class=" bg-[#ffd4bd] rounded-lg ">
-                        <h1 class="text-center text-6xl p-8 text-green-dark">
+                      <div class=" bg-[#ffd4bd] rounded-lg">
+                        <h1 class="text-center text-6xl p-8 text-green-dark xs:flex xs:items-center xs:text-7xl xs:font-bold">
                           Login
                         </h1>
 
                         <form class="pt-6 pb-2 my-2">
-                          <div class="mb-4">
+                          <div class="mb-4 xs:pr-4">
                             <label
                               class="block text-sm font-bold mb-2"
                               for="email"
@@ -71,14 +71,14 @@ export default function Login({ open, setOpen, children, title }) {
                               Mobile Number
                             </label>
                             <input
-                              class="shadow appearance-none border rounded w-full py-2 px-3 "
+                              class="shadow appearance-none border rounded w-full py-2 px-3"
                               id="number"
                               type="text"
                               maxLength="10"
                               placeholder="Enter Your Mobile Number"
                             />
                           </div>
-                          <div class="mb-4">
+                          <div class="mb-4 xs:pr-4">
                             <label
                               class="block text-sm font-bold mb-2"
                               for="email"
@@ -92,7 +92,7 @@ export default function Login({ open, setOpen, children, title }) {
                               placeholder="Enter Your Password"
                             />
                           </div>
-                          <div class="block md:flex items-center justify-between">
+                          <div class="block md:flex items-center justify-between xs:pr-4">
                             <div>
                               <button alt="LOG IN" onClick={(e) => {
                                 e.preventDefault();
@@ -104,7 +104,6 @@ export default function Login({ open, setOpen, children, title }) {
                                   }else if(index===users.length-1){
                                     alert("Invalid Credentials")
                                   }
-
                                 });
                               }}>
                                 <i>L</i>

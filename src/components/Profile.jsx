@@ -20,7 +20,9 @@ function Profile({ open, setOpen }) {
 
   useEffect(() => {
     if (localStorage.getItem("Number")) {
-      const user = users.filter((user) => user.Number === localStorage.getItem("Number"));
+      const user = users.filter(
+        (user) => user.Number === localStorage.getItem("Number")
+      );
       if (user) {
         setusers1(user);
       }
@@ -96,17 +98,23 @@ function Profile({ open, setOpen }) {
                                     }}
                                   >
                                     <div className="flex items-center justify-center">
-
                                       <MDBCardImage
                                         src="https://cdn-icons-png.flaticon.com/512/560/560277.png"
                                         alt="Avatar"
                                         className="my-5"
-                                        style={{ width: "160px", height: "160px" }}
+                                        style={{
+                                          width: "160px",
+                                          height: "160px",
+                                        }}
                                         fluid
                                       />
                                     </div>
-                                    <p className="font-semibold text-xl">{users1[0]?.name || ""}</p>
-                                    <p className="font-light text-xl">Bpl Card Holder</p>
+                                    <p className="font-semibold text-xl">
+                                      {users1[0]?.name || ""}
+                                    </p>
+                                    <p className="font-light text-xl">
+                                      Bpl Card Holder
+                                    </p>
                                     <MDBIcon far icon="edit mb-5" />
                                   </MDBCol>
                                   <MDBCol md="8">
@@ -140,11 +148,9 @@ function Profile({ open, setOpen }) {
                                         <MDBCol size="6" className="mb-3">
                                           <p className="font-light">
                                             {users1[0]?.bplCard || ""}
-
                                           </p>
 
-                                          <MDBCardText className="text-muted">
-                                          </MDBCardText>
+                                          <MDBCardText className="text-muted"></MDBCardText>
                                         </MDBCol>
                                         <MDBCol size="6" className="mb-3">
                                           <MDBTypography tag="h6">
@@ -156,28 +162,28 @@ function Profile({ open, setOpen }) {
                                         </MDBCol>
                                       </MDBRow>
 
-                                      <div className="d-flex justify-content-start">
-                                        <a href="#!">
-                                          <MDBIcon
-                                            fab
-                                            icon="facebook me-3"
-                                            size="lg"
-                                          />
-                                        </a>
-                                        <a href="#!">
-                                          <MDBIcon
-                                            fab
-                                            icon="twitter me-3"
-                                            size="lg"
-                                          />
-                                        </a>
-                                        <a href="#!">
-                                          <MDBIcon
-                                            fab
-                                            icon="instagram me-3"
-                                            size="lg"
-                                          />
-                                        </a>
+                                      <div class="block md:flex items-center justify-between xs:pr-4">
+                                        <div>
+                                          <button
+                                            alt="LOG OUT"
+                                            onClick={
+                                              () => {
+                                                localStorage.removeItem(
+                                                  "Number"
+                                                );
+                                                window.location.reload();
+                                              }
+                                            }
+                                          >
+                                            <i>L</i>
+                                            <i>O</i>
+                                            <i>G</i>
+                                            <i>&nbsp;</i>
+                                            <i>O</i>
+                                            <i>U</i>
+                                            <i>T</i>
+                                          </button>
+                                        </div>
                                       </div>
                                     </MDBCardBody>
                                   </MDBCol>

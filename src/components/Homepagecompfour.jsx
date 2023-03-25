@@ -1,8 +1,10 @@
 import Profile from "./Profile.jsx";
 import React, { useState } from "react";
+import Login from "./Login.jsx";
 
 export const Homepagecompfour = () => {
   const [openProfile, setOpenProfile] = useState(false);
+  const [openLogin, setOpenLogin] = useState(false);
 
   return (
     <div className="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row mt-10 py-5 lg:px-10 xl:px-10 2xl:px-10 px-4">
@@ -43,13 +45,21 @@ export const Homepagecompfour = () => {
           style={{ backgroundColor: "#f1d4ca" }}
           data-aos="flip-right"
           onClick={() => {
-            setOpenProfile(true);
+            if(localStorage.getItem("Number"))
+            {
+              setOpenProfile(true);
+            }
+            else
+            {
+              setOpenLogin(true);
+            }
           }}
         >
           YOUR PROFILE
         </a>
       </div>
       <Profile open={openProfile} setOpen={setOpenProfile} />
+      <Login open={openLogin} setOpen={setOpenLogin} />
     </div>
   );
 };

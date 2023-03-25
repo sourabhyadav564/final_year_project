@@ -7,13 +7,13 @@ function Homepagecompsix() {
       <div className="lg:p-10 xl:p-10 2xl:p-10 p-4 flex flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-around">
         <div className="flex flex-col">
           <div className="flex flex-col justify-center items-center w-full">
-            <h1 className="font-bold text-7xl pb-7" data-aos="flip-up">
+            <h1 className="font-bold text-7xl pb-7 xs:text-center" data-aos="flip-up">
               RATION HOUSE
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row justify-center items-center">
             <img
-              className="lg:w-[300px] lg:h-[300px] border-2 border-black  w-24 h-36 my-4"
+              className="lg:w-[300px] lg:h-[300px] border-2 border-black xs:w-[360px] xs:h-[360px] w-24 h-36 my-4"
               style={{ transform: "rotate(-6deg)" }}
               src={rationCard}
               alt="undraw-healthy-lifestyle-6tyl"

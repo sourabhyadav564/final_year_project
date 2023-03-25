@@ -16,8 +16,8 @@ function Navbar() {
     <>
       <section className="shadow mt-0 py-5 w-screen lg:h-max">
         <div className="flex items-center mx-auto overflow-hidden font-medium h-16 flex-row justify-between px-4 mt-0 w-screen lg:h-24">
-          <a className="my-11 border-none outline-0 outline-offset-0 outline-none h-14">
-            <h1 className="tracking-tighter lg:text-4xl text-2xl text-black font-extrabold p-5 border-solid my-20 border-black border-2 outline-offset-0 outline-0 outline-none py-1 mt-0 truncate">
+          <a className="my-11 border-none outline-0 outline-offset-0 outline-none h-14 xs:pt-2">
+            <h1 className="tracking-tighter lg:text-4xl text-2xl text-black font-extrabold p-5 border-solid my-20 border-black border-2 outline-offset-0 outline-0 outline-none py-1 mt-0 truncate xs:">
               RATION HOUSE
             </h1>
           </a>
@@ -129,7 +129,8 @@ function Navbar() {
                       }
                       // href="#"
                       onClick={() => {
-                        myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+                        scrollTo(0, 4300);
+                        // myRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
                       }}
                     >
                       Order Now
@@ -164,6 +165,29 @@ function Navbar() {
                       }}
                     >
                       Cart
+                    </a>
+                  )}
+                </Menu.Item>
+                <Menu.Item as="li">
+                  {({ active }) => (
+                    <a
+                      className={
+                        "group flex items-center w-full px-2 py-2 text-sm" +
+                        (active ? "bg-primary text-white" : "")
+                      }
+                      // href="#"
+                      onClick={() => {
+                        if(localStorage.getItem("Number"))
+                        {
+                          setOpenProfile(true);
+                        }
+                        else
+                        {
+                          setOpenLogin(true);
+                        }
+                      }}
+                    >
+                      Profile
                     </a>
                   )}
                 </Menu.Item>

@@ -46,7 +46,7 @@ function App() {
       // changeusercounter(usercounter_);
 
     } else {
-      window.alert('Ecommerce contract not deployed to detected network.')
+      // window.alert('Ecommerce contract not deployed to detected network.')
     }
   }
 
