@@ -13,7 +13,16 @@ function Carttwo({ open, setOpen }) {
     setproducts(newProducts);
     localStorage.setItem("cart", JSON.stringify(newProducts));
   };
-  const notify = () => toast("Product removed from cart");
+  const notify = () => toast.success("Product removed from cart", {
+    position: toast.POSITION.TOP_RIGHT,
+    autoClose: 3000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    toastId: "007",
+  });;
   useEffect(() => {
     if (localStorage.getItem("cart")) {
       const cart = JSON.parse(localStorage.getItem("cart"));
