@@ -14,14 +14,14 @@ function Carttwo({ open, setOpen }) {
     localStorage.setItem("cart", JSON.stringify(newProducts));
   };
   const notify = () => toast.success("Product removed from cart", {
-    position: toast.POSITION.TOP_RIGHT,
-    autoClose: 3000,
+    position: toast.POSITION.BOTTOM_CENTER,
+    autoClose: 1000,
     hideProgressBar: false,
     closeOnClick: true,
     pauseOnHover: true,
     draggable: true,
     progress: undefined,
-    toastId: "007",
+    // toastId: "007",
   });;
   useEffect(() => {
     if (localStorage.getItem("cart")) {
@@ -65,6 +65,7 @@ function Carttwo({ open, setOpen }) {
                       <div className="flex items-start justify-between">
                         <Dialog.Title className="text-lg font-medium text-gray-900">Shopping cart</Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">
+                          <ToastContainer />
                           <button
                             type="button"
                             className="-m-2 p-2 text-gray-400 hover:text-gray-500"

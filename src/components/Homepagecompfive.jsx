@@ -5,13 +5,13 @@ export const Homepagecompfive = () => {
   const notify = () =>
     toast.success(`product is added to your cart successfully`, {
       position: toast.POSITION.TOP_LEFT,
-      autoClose: 3000,
+      autoClose: 1000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      toastId: "001",
+      // toastId: "001",
     });
   const addtocart = (id) => {
     const product = products.find((product) => product.id === id);

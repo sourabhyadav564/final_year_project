@@ -118,7 +118,17 @@ export const products = [
             'Mustard oil',
         description: 'Mustard oil is a oil',
     },
-
+    {
+        id: 9,
+        name: 'Milk',
+        href: '#',
+        price: 40,
+        quantity: "1L",
+        imageSrc: 'https://th.bing.com/th/id/OIP._YIy8p_SO0DUHRvcctZvWQHaHT?w=179&h=180&c=7&r=0&o=5&pid=1.7',
+        imageAlt:
+            'Milk',
+        description: 'Milk is a dairy product',
+    },
 
 
 
